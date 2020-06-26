@@ -1,3 +1,10 @@
+## Resources
+
+* https://docs.microsoft.com/en-us/azure/aks/
+* https://docs.microsoft.com/en-us/azure/aks/tutorial-kubernetes-prepare-app
+* https://azure.microsoft.com/en-us/resources/get-started-with-kubernetes-on-azure
+* https://www.linkedin.com/learning/topics/kubernetes
+
 ## Azure Cloud Shell
 
 Start Azure Cloud Shell
