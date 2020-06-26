@@ -89,7 +89,7 @@ kubectl apply -f 1-service.yml
 Inspect
 
 ```
-kubect get svc -o wide
+kubectl get svc -o wide
 ```
 
 Create ingress, expose service publically
@@ -124,7 +124,7 @@ Delete echo application
 
 ```
 kubectl delete -f 0-deployment.yml,1-service.yml,2-ingress.yml
-kubect get deploy,svc,ing
+kubectl get deploy,svc,ing
 ```
 
 ## Demo vote application
