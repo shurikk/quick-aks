@@ -128,7 +128,7 @@ watch kubectl get pods
 kubectl get svc -o wide
 ```
 
-Get the frontend service IP address and open in your web browser, amd watch pods logs
+Get azure-vote-front service external IP address and open in your web browser, amd watch pods logs
 
 ```
 kubectl logs -l app=azure-vote-front -f
