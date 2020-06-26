@@ -127,6 +127,13 @@ kubectl delete -f 0-deployment.yml,1-service.yml,2-ingress.yml
 kubectl get deploy,svc,ing
 ```
 
+and to bring it back to how it was
+
+```
+kubectl apply -f 0-deployment.yml,1-service.yml,2-ingress.yml
+kubectl get deploy,svc,ing
+```
+
 ## Demo vote application
 
 ```
