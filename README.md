@@ -109,7 +109,7 @@ Scale up and down
 
 ```
 kubectl scale --replicas 5 deploy/echo
-for i in $(seq 10); do curl -s $URL/hi/there/$i | grep "Request served"; done
+for i in $(seq 10); do curl -s $URL/hi/there/$i | grep -a2 "Request served"; done
 kubectl scale --replicas 1 deploy/echo
 ```
 
@@ -132,6 +132,13 @@ Get the frontend service IP address and open in your web browser, amd watch pods
 
 ```
 kubectl logs -l app=azure-vote-front -f
+```
+
+Enter the pod
+
+```
+kubectl exec -it $(kubectl get pod -o name -l app=azure-vote-front) -- bash
+ps auxw
 ```
 
 Delete vote application
