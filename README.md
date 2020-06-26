@@ -107,7 +107,7 @@ export IP=$(kubectl get ingress/echo -o jsonpath="{.status.loadBalancer.ingress[
 export URL=http://$IP/echo
 echo $IP
 echo $URL
-curl $URL
+curl $URL/i/am/echoed
 ```
 
 NOTE: also try opening URL using your browser
